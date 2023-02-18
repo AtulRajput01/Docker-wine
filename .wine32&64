@@ -1,3 +1,7 @@
 For Win32 applications, we create a directory ~/.wine32 to store the configurations.
 
 1.  "WINEARCH=win32 WINEPREFIX=~/.wine32 winecfg"
+
+For Win64 applications, we create a directory ~/.wine64 to store the configurations.
+
+"$ WINEARCH=win64 WINEPREFIX=~/.wine64 winecfg"
