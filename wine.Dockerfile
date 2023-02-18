@@ -22,3 +22,14 @@ RUN dpkg --add-architecture i386 && \
     # Wine 7.0 stable has some issues with some games I tested
     # Use Wine 7.11 staging instead
     apt-get install -y --install-recommends winehq-staging
+
+
+# GStreamer plugins
+RUN apt-get update -y && \
+    apt-get install -y --install-recommends \
+        gstreamer1.0-libav:i386 \
+        gstreamer1.0-plugins-bad:i386 \
+        gstreamer1.0-plugins-base:i386 \
+        gstreamer1.0-plugins-good:i386 \
+        gstreamer1.0-plugins-ugly:i386 \
+        gstreamer1.0-pulseaudio:i386
