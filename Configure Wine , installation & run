@@ -1,0 +1,19 @@
+Configure Wine
+
+ "WINEARCH=win64 WINEPREFIX=~/.wine64 winecfg"
+
+Make sure virtual desktop is used in winecfg. In my case, I used resolution 2560 x 1440 for the virtual desktop.
+
+
+Install WeChat
+
+$ cd /mnt
+$ WINEPREFIX=~/.wine64 wine WeChatSetup.exe
+
+WeChat will be installed in ~/.wine64/drive_c/Program\ Files\ \(x86\)/Tencent/WeChat/WeChat.exe by default.
+
+Run WeChat
+
+ "WINEPREFIX=~/.wine64 wine ~/.wine64/drive_c/Program\ Files\ \(x86\)/Tencent/WeChat/WeChat.exe"
+ 
+ I tried fcitx input from the host computer to the WeChat in the container and it worked fine.
