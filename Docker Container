@@ -12,3 +12,6 @@ $ docker run \
     -v /tmp/.X11-unix:/tmp/.X11-unix:ro \
     -v $(pwd):/mnt \
     wine:20.04
+
+Notice --rm has been removed and -e XMODIFIERS=@im=fcitx,
+-e QT_IM_MODULE=fcitx, -e GTK_IM_MODULE=fcitx has been added to enable the fcitx input from the host computer.
