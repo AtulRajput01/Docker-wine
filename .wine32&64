@@ -11,3 +11,12 @@ Run Application
 For Win32 applications, we specify the Win32 configuration directory as WINEPREFIX before wine.
 
  "WINEPREFIX=~/.wine32 wine app.exe"
+ 
+ For Win32 applications, we specify the Win64 configuration directory as WINEPREFIX before wine.
+
+ "WINEPREFIX=~/.wine64 wine app.exe"
+ 
+ Run Display Scaling
+For some old applications, the display usually is very small. We could scale the display using a scaling script.
+
+For example, to scale the display of app.exe by 1.5x, we could run the following command.
