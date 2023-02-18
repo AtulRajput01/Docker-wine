@@ -1,0 +1,3 @@
+For Win32 applications, we create a directory ~/.wine32 to store the configurations.
+
+1.  "WINEARCH=win32 WINEPREFIX=~/.wine32 winecfg"
