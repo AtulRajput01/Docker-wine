@@ -22,3 +22,9 @@ For some old applications, the display usually is very small. We could scale the
 For example, to scale the display of app.exe by 1.5x, we could run the following command.
 
  "WINEPREFIX=~/.wine32 run_scaled --scale=1.5 wine app.exe"
+
+Example
+We will use running Windows WeChat as an example.
+
+Download WeChat
+ "wget https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe"
