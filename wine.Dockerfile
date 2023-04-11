@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:alpine
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -46,13 +46,4 @@ RUN apt-get update -y && \
         python3-pip
         
         
-# Install dependencies for display scaling
-RUN apt-get update -y && \
-    apt-get install -y --install-recommends \
-        build-essential \
-        bc \
-        git \
-        xpra \
-        xvfb \
-        python3 \
-        python3-pip
+
