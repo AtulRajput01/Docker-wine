@@ -46,13 +46,4 @@ RUN apt-get update -y && \
         python3-pip
         
         
-# Install dependencies for display scaling
-RUN apt-get update -y && \
-    apt-get install -y --install-recommends \
-        build-essential \
-        bc \
-        git \
-        xpra \
-        xvfb \
-        python3 \
-        python3-pip
+
